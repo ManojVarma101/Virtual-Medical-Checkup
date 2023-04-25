@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="container">
+    <!-- <div class="card card-body" style="border: 1px solid black; box-shadow: 0 0 10px black; background-color: #edc8ff"> -->
+    <h2>Choose your disease</h2>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-md-4 card card-body" style="box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07); margin: 5px; background-color: #fff; border-color: (0, 0, 0, 0.125);">
+            <p align="center" style="margin-bottom: 10px;"><a href="{{ url_for('diabetesPage') }}" style="text-decoration: none;"><button
+                        class="btn btn-info btn-block" style="background-color: #4e0374">Diabetes</button></a></p>
+            <p align="center" style="margin-bottom: 10px;"><a href="{{ url_for('liverPage') }}" style="text-decoration: none;"><button
+                            class="btn btn-info btn-block" style="background-color: #4e0374">Liver Disease</button></a>
+                       
+            <p align="center"><a href="{{ url_for('cancerPage') }}" style="text-decoration: none;"><button
+                        class="btn btn-info btn-block" style="background-color: #4e0374">Breast Cancer</button></a>
+            </p>
+            
+        </div>
+    </div>
+    <!-- <div class="row justify-content-center">
+        <div class="col-md-4 card card-body" style="margin: 3px;">
+            <p align="center"><a href="{{ url_for('cancerPage') }}" style="text-decoration: none;"><button
+                        class="btn btn-info btn-block" style="background-color: #4e0374">Breast Cancer</button></a>
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4 card card-body" style="margin: 3px;">
+            <p align="center"><a href="{{ url_for('liverPage') }}" style="text-decoration: none;"><button
+                        class="btn btn-info btn-block" style="background-color: #4e0374">Liver Disease</button></a>
+            </p>
+        </div>
+    </div> -->
+    <!-- </div> -->
+</div>
+{% endblock %}
